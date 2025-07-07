@@ -38,15 +38,15 @@ sub get_counsellor {
 sub route_call_to_agent {
     my ($caller_number, $agent_number) = @_;
     
-    print "📞 Routing call from $caller_number to agent $agent_number...\n";
+    print "Routing call from $caller_number to agent $agent_number...\n";
 
     # Here you'd integrate with your telephony system (e.g., Twilio, Meritto, etc.)
     # For now, we'll just simulate it.
 
     if ($agent_number) {
-        print "✅ Call successfully routed to $agent_number\n";
+        print "Call successfully routed to $agent_number\n";
     } else {
-        print "❌ No agent found. Playing voicemail or default message.\n";
+        print "No agent found. Playing voicemail or default message.\n";
     }
 }
 
